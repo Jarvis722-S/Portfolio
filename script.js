@@ -18,4 +18,3 @@ document.querySelector(".cv").addEventListener("click", function(event) {
   link.click();
   window.open("cv.pdf", "_blank");
 });
-
