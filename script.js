@@ -18,3 +18,24 @@ document.querySelector(".cv").addEventListener("click", function(event) {
   link.click();
   window.open("cv.pdf", "_blank");
 });
+
+// ====== JavaScript ======
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".tab-btn");
+  const contents = document.querySelectorAll(".tab-item");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Retirer l'état actif des boutons
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      // Masquer tous les contenus
+      contents.forEach(c => c.classList.remove("active"));
+
+      // Afficher le contenu correspondant
+      const target = document.getElementById(btn.dataset.tab);
+      target.classList.add("active");
+    });
+  });
+});
