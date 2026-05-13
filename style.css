@@ -139,6 +139,7 @@ body {
 
 /* ====== CSS ====== */
 /* ====== CSS ajusté ====== */
+/* ====== CSS ajusté ====== */
 .about-section {
   background-color: #f5f5f5;
   color: #333333;
@@ -156,8 +157,15 @@ body {
   font-weight: bold;
   color: #222222;
 
+  /* Décalage du titre seul vers la gauche */
+  position: relative;
+  left: -2.8cm;
+
   /* Séparation du titre avec la photo et le contenu */
-  margin-bottom: 1.5cm;
+  margin-bottom: 1cm;
+
+  /* Ajout d’un padding interne autour du texte */
+  padding: 1cm;
 }
 
 .about-container {
@@ -224,7 +232,9 @@ body {
   }
 
   .about-title {
+    left: -1.5cm;
     margin-bottom: 2cm;
+    padding: 0.5cm; /* padding réduit sur mobile */
   }
 
   .about-container {
@@ -241,3 +251,5 @@ body {
     justify-content: center;
   }
 }
+
+
