@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Mon Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bonjour Edith </h1>
-  <p>Bienvenue sur mon portfolio GitHub Pages !</p>
-  <p>Bienvenue sur mon portfolio GitHub Pages !</p>
-  <p>QUE L'ETERNEL VOUS GUIDEEEEsssssss</p>
+  <nav class="navbar">
+    <div class="logo">ZEGUE Necho</div>
+    <ul class="menu">
+      <li><a href="#about">A propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#education">Formation</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#hobbies">Loisirs</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="cv.pdf" download class="cv">
+          📄 CV
+        </a>
+      </li>
+      <li class="lang-dropdown">
+        <button id="lang-btn">🌐 Langue ▼</button>
+        <ul id="lang-menu" class="hidden">
+          <li>Français</li>
+          <li>English</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
