@@ -81,7 +81,7 @@ body {
 /* Section avec image de fond */
 .hero {
   height: 100vh;
-  background: url("background.jpg") no-repeat center center/cover;
+  background: url("images/bureau.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
